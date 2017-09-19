@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"mdpopups.sublime_user_lang_map": null,
+	"mdpopups.use_sublime_highlighter": null,
+	"theme": "Adaptive.sublime-theme"
+}

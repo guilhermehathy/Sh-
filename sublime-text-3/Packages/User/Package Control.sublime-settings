@@ -1,0 +1,32 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"A File Icon",
+		"All Autocomplete",
+		"Color Scheme - saulhudson",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"Laravel Blade Highlighter",
+		"Package Control",
+		"PHP Companion",
+		"Pretty JSON",
+		"R-Box",
+		"SendCode",
+		"SendText",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"SublimeREPL",
+		"Terminal",
+		"TOML",
+		"Twig"
+	]
+}

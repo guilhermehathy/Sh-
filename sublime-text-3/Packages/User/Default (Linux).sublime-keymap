@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+shift+,"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+shift+."], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+]
