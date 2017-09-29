@@ -33,7 +33,7 @@ git config --global user.name "Guilherme Hathy"
 
 
 echo "Instalador do pip3 e pacotes usados"
-apt-get install build-essential libssl-dev libffi-dev python-dev
+apt-get install-y  build-essential libssl-dev libffi-dev python-dev
 apt install -y libmysqlclient-dev
 apt-get install -y python3-pip
 
@@ -92,6 +92,9 @@ sudo apt-get install vlc
 echo "Instalador R"
 
 apt-get install r-base
+
+echo "precisa para instalar o devtools"
+apt-get install -y  libcurl4-openssl-dev libssl-dev
 
 
 echo "Instalando PHP"
