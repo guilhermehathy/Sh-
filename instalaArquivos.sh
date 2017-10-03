@@ -99,7 +99,10 @@ apt-get install -y  libcurl4-openssl-dev libssl-dev
 
 echo "Instalando PHP"
 
-apt-get install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php-memcached php7.0-dev php7.0-mcrypt php7.0-sqlite3 php7.0-mbstring
+apt-get install -y libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php-memcached php7.0-dev php7.0-mcrypt php7.0-sqlite3 php7.0-mbstring
+
+echo"Instalando Latex"
+apt-get install -y texlive texlive-latex-extra texlive-lang-portuguese
 
 echo "Finalizando aplicação"
 apt-get update
