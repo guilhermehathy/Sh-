@@ -99,6 +99,9 @@ apt-get install -y  libcurl4-openssl-dev libssl-dev
 echo "Precisa para instalar o pacote pdfTools"
 apt-get install -y libpoppler-cpp-dev
 
+echo "instalador Rjava"
+apt-get install -y r-cran-rjava
+
 
 echo "Instalando PHP"
 
