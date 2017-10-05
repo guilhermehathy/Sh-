@@ -33,7 +33,7 @@ git config --global user.name "Guilherme Hathy"
 
 
 echo "Instalador do pip3 e pacotes usados"
-apt-get install-y  build-essential libssl-dev libffi-dev python-dev
+apt-get install -y  build-essential libssl-dev libffi-dev python-dev
 apt install -y libmysqlclient-dev
 apt-get install -y python3-pip
 
