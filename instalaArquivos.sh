@@ -15,7 +15,7 @@ echo deb http://repository.spotify.com stable non-free | tee /etc/apt/sources.li
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
 
-add-apt-repository ppa:nicola-onorata/desktop
+add-apt-repository -y ppa:nicola-onorata/desktop
 
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubuntu xenial/'
@@ -26,7 +26,7 @@ apt-get update
 
 echo "Instalador do git"
 
-apt-get install git
+apt-get install -y git
 
 git config --global user.email "guilhermehathy@hotmail.com"
 git config --global user.name "Guilherme Hathy"
@@ -64,16 +64,16 @@ pip install -U scikit-neuralnetwork
 
 echo "Instalador SublimeText"
 
-apt-get install sublime-text
+apt-get install -y sublime-text
 cp -r sublime-text-3 /home/$(whoami)/.config
 
 echo "Instalador guake"
 
-apt-get install guake
+apt-get install -y guake
 
 echo "Instalador Spotify"
 
-apt-get install spotify-client
+apt-get install -y spotify-client
 
 
 echo "Repositorios Git"
@@ -87,12 +87,12 @@ git clone https://github.com/guilhermehathy/Machine-Learning.git
 
 echo "Instalador vlc"
 
-sudo apt-get install vlc
+apt-get install -y vlc
 
 
 echo "Instalador R"
 
-apt-get install r-base
+apt-get install -y r-base
 
 echo "precisa para instalar o devtools"
 apt-get install -y  libcurl4-openssl-dev libssl-dev
