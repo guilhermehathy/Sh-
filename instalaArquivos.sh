@@ -111,6 +111,11 @@ apt-get install -y libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json ph
 echo"Instalando Latex"
 apt-get install -y texlive texlive-latex-extra texlive-lang-portuguese
 
+echo"instalando o Google Chrome Stable"
+apt-get install -y gdebi 
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+gdebi google-chrome-stable_current_amd64.deb 
+
 echo "Finalizando aplicação"
 apt-get update
 
