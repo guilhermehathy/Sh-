@@ -51,6 +51,7 @@ pip3 install -U datetime
 pip3 install -U requests
 pip3 install -U os
 pip3 install -U scrapy_splash
+pip3 install -U selenium
 pip3 install -U json
 pip3 install -U youtube_dl
 pip3 install -U bs4
