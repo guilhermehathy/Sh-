@@ -22,6 +22,10 @@ add-apt-repository 'deb [arch=amd64,i386] https://cran.rstudio.com/bin/linux/ubu
 
 add-apt-repository -y ppa:ondrej/php
 
+echo "Repository do MongoDB"
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
 apt-get update
 
 echo "Instalador do git"
@@ -31,6 +35,24 @@ apt-get install -y git
 git config --global user.email "guilhermehathy@hotmail.com"
 git config --global user.name "Guilherme Hathy"
 
+echo "Instalador do mongoDB"
+apt-get install -y mongodb-org
+
+echo "
+[Unit]
+Description=High-performance, schema-free document-oriented database
+After=network.target
+
+[Service]
+User=mongodb
+ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+
+[Install]
+WantedBy=multi-user.target
+" >> /etc/systemd/system/mongodb.service
+
+echo "habilitar o MongoDB para iniciar quando o sistema inicializar."
+systemctl enable mongodb
 
 echo "Instalador do pip3 e pacotes usados"
 apt-get install -y  build-essential libssl-dev libffi-dev python-dev
