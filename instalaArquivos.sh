@@ -84,6 +84,7 @@ pip3 install -U db.py
 pip3 install -U time
 pip3 install -U scikit-neuralnetwork
 pip3 install -U pymongo
+pip3 install -U nltk
 
 
 echo "Instalador SublimeText"
