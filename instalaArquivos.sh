@@ -26,7 +26,15 @@ echo "Repository do MongoDB"
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.2.list
 
+echo "Adicionando thema para o Gnome"
+add-apt-repository -y ppa:tiagosh/diolinux-paper-orange
+
 apt-get update
+
+echo "Instalando o diolinux-paper-orange"
+
+apt install -y diolinux-paper-orange
+
 
 echo "Instalador do git"
 
