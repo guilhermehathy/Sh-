@@ -29,12 +29,17 @@ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" 
 echo "Adicionando thema para o Gnome"
 add-apt-repository -y ppa:tiagosh/diolinux-paper-orange
 
+echo "PPA emacs"
+apt-add-repository -y ppa:adrozdoff/emacs
+
 apt-get update
 
 echo "Instalando o diolinux-paper-orange"
 
 apt install -y diolinux-paper-orange
 
+echo "eMacs"
+apt install -y emacs25
 
 echo "Instalador do git"
 
