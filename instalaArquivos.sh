@@ -39,7 +39,8 @@ echo "Instalando o diolinux-paper-orange"
 apt install -y diolinux-paper-orange
 
 echo "eMacs"
-apt install -y emacs25
+apt install -y emacs25 ess
+apt-get install -y emacs-goodies-el
 
 echo "Instalador do git"
 
