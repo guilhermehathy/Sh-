@@ -288,15 +288,6 @@ echo "Instalador Spotify"
 apt-get install -y spotify-client
 
 
-echo "Repositorios Git"
-
-cd ~/
-
-git clone https://github.com/guilhermehathy/guilhermehathy.github.io.git
-git clone https://github.com/guilhermehathy/Pesquisa.git
-git clone https://gitlab.c3sl.ufpr.br/pet-estatistica/apostila-R.git
-git clone https://github.com/guilhermehathy/Machine-Learning.git
-
 echo "Instalador vlc"
 
 apt-get install -y vlc
