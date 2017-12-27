@@ -306,6 +306,9 @@ apt-get install -y libpoppler-cpp-dev
 echo "instalador Rjava"
 apt-get install -y r-cran-rjava
 
+echo "intalando htop"
+apt-get install -y htop
+
 
 echo "Instalando PHP"
 
