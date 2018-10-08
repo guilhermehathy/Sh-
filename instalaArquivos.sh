@@ -272,7 +272,12 @@ pip3 install -U  command-not-found
 pip3 install -U  chrome-gnome-shell
 pip3 install -U  Brlapi
 pip3 install -U  apturl
-
+pip3 install -U  pyvirtualdisplay
+pip3 install -U  newspaper3k
+pip3 install -U  datefinder
+pip3 install -U  pymysql
+pip3 install -U  beautifulsoup4
+pip3 install -U  boto3
 
 echo "Instalador SublimeText"
 
